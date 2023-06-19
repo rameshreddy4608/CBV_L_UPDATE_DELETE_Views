@@ -1,0 +1,16 @@
+{% extends 'app/dummy.html' %}
+
+{% block title %}
+    <title>List Page</title>
+{% endblock %}
+
+{% block body_block  %}
+<h1>List of Schools</h1>
+
+{% for school in schools %}
+    
+    <a href="{{school.pk}}"><h1>{{school.name}}</h1></a>
+    
+
+{% endfor %}
+{% endblock %}
